@@ -1,0 +1,14 @@
+<!-- add multi="true" to enable multiple expanding of cards -->
+<mat-accordion *ngIf="tickets.length > 0">
+  <mat-expansion-panel *ngFor="let ticket of tickets">
+    <mat-expansion-panel-header>
+      {{ ticket.title }}
+    </mat-expansion-panel-header>
+    <p>{{ ticket.content }}</p>
+    <mat-action-row>
+      <button mat-button color="primary">EDIT</button>
+      <button mat-button color="warn">DELETE</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="mat-body-1 info-text" *ngIf="tickets <= 0">No Tickets found.</p>
