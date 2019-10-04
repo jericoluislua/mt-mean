@@ -6,5 +6,10 @@ import {Component} from "@angular/core";
 })
 
 export class HeaderComponent {
+  opened = false;
 
+  toggleSidebar(){
+    this.opened = !this.opened;
+    console.log(this.opened);
+  }
 }
