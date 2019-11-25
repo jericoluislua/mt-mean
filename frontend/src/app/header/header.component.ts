@@ -1,4 +1,7 @@
-import {Component} from "@angular/core";
+import {Component} from '@angular/core';
+import {MatIconRegistry} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
+// https://alligator.io/angular/custom-svg-icons-angular-material/
 
 @Component({
   selector: 'app-header',
@@ -8,8 +11,10 @@ import {Component} from "@angular/core";
 export class HeaderComponent {
   opened = false;
 
-  toggleSidebar(){
-    this.opened = !this.opened;
-    console.log(this.opened);
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
+    this.matIconRegistry.addSvgIcon(
+      'tickets',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('/src/tickets.svg')
+    );
   }
 }

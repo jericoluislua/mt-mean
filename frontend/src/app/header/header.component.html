@@ -1,12 +1,11 @@
 <mat-toolbar color="primary">
 <!--
   <button mat-icon-button (click)="drawer.toggle()" class="toggleSideNav"><mat-icon>menu</mat-icon></button>
--->
+--><svg-icon src="../../../tickets.svg"
+             [svgStyle]="{ 'width.px':40,
+                           'height.px':40,
+                           'fill':'rgb(255,255,255)',
+                           'padding-right.px':10}"></svg-icon>
   Movie Ticket-MEAN
+  <!--<div>Icons made by <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>-->
 </mat-toolbar>
-<mat-drawer-container>
-  <mat-drawer #drawer mode="side">
-    Test
-  </mat-drawer>
-
-</mat-drawer-container>
