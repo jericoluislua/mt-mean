@@ -37,6 +37,11 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="ts.external.directory.path" value="C:\Users\laffan\Documents\mt-mean\frontend\node_modules\typescript\lib" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\laffan\Documents\mt-mean\backend" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -73,7 +78,7 @@
       <workItem from="1574440370159" duration="385000" />
       <workItem from="1574440761572" duration="1778000" />
       <workItem from="1574697418566" duration="866000" />
-      <workItem from="1574698301252" duration="2708000" />
+      <workItem from="1574698301252" duration="2828000" />
     </task>
     <servers />
   </component>
