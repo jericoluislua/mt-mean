@@ -1,0 +1,17 @@
+<mat-card>
+  <form (submit)="loginUser($event)">
+    <mat-card-title>Login</mat-card-title>
+    <mat-form-field>
+      <label for="username">Username</label>
+      <input matInput type="text" placeholder="Username" id="username" required><!--ngModel #username='ngModel'-->
+      <!--<mat-error *ngIf="username.invalid">Wrong Username kusochibi</mat-error>-->
+    </mat-form-field>
+    <mat-form-field>
+      <label for="password">Password</label>
+      <input matInput type="password" placeholder="Password" id="password" required><!-- ngModel #password='ngModel'-->
+      <!--<mat-error *ngIf="password.invalid">Wrong Password kusochibi</mat-error>-->
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit">Login</button>
+  </form>
+</mat-card>
+<a routerLink="/">back</a>
